@@ -1,3 +1,9 @@
 <Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Smdb.Api/Smdb.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Smdb.Api.Test/Smdb.Api.Test.csproj" />
+  </Folder>
   <Project Path="../SharedLibrary/src/Shared/Shared.csproj" />
 </Solution>
