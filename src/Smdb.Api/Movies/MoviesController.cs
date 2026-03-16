@@ -40,6 +40,47 @@ var result = await movieService.CreateMovie(movie!);
 await JsonUtils.SendResultResponse(req, res, props, result); 
 await next(); 
 } 
+ // curl -X GET "http://localhost:8080/api/v1/movies/1" 
+ 
+  public async Task ReadMovie(HttpListenerRequest req, HttpListenerResponse res,  
+    Hashtable props, Func<Task> next) 
+  { 
+    var uParams = (NameValueCollection) props["req.params"]!; 
+    int id = int.TryParse(uParams["id"]!, out int i) ? i : -1; 
+ 
+    var result = await movieService.ReadMovie(id); 
+ 
+    await JsonUtils.SendResultResponse(req, res, props, result); 
+ 
+    await next(); 
+    } 
+    // curl -X PUT "http://localhost:8080/api/v1/movies/1" -H "Content-Type:application/json" -d "{ \"title\": \"Joker 2\", \"year\": 2020, \"description\":\"A man that is a joke.\" }" 
+ 
+  public async Task UpdateMovie(HttpListenerRequest req, 
+    HttpListenerResponse res, Hashtable props, Func<Task> next) 
+  { 
+    var uParams = (NameValueCollection) props["req,params"]!; 
+    int id = int.TryParse(uParams["id"]!, out int i) ? i : -1; 
+    var text = (string) props["req.text"]!; 
+    var movie = JsonSerializer.Deserialize<Movie>(text, 
+      JsonSerializerOptions.Web); 
+    var result = await movieService.UpdateMovie(id, movie!); 
+ 
+    await JsonUtils.SendResultResponse(req, res, props, result); 
+ 
+    await next(); 
+  } 
+  // curl -X DELETE http://localhost:8080/api/v1/movies/1 
+public async Task DeleteMovie(HttpListenerRequest req, 
+HttpListenerResponse res, Hashtable props, Func<Task> next) 
+{ 
+var uParams = (NameValueCollection) props["req.params"]!; 
+int id = int.TryParse(uParams["id"]!, out int i) ? i : -1; 
+var result = await movieService.DeleteMovie(id); 
+await JsonUtils.SendResultResponse(req, res, props, result); 
+await next(); 
+} 
+
 } 
 
 

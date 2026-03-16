@@ -1,20 +1,26 @@
 namespace Smdb.Core.Db; 
  
 using Smdb.Core.Movies; 
+using Smdb.Core.Movies.Actors;
  
 public class MemoryDatabase 
 { 
   public List<Movie> Movies { get; } 
+  public List<Actor> Actors { get; }
  
   private int nextMovieId; 
+  private int nextActorId;
  
   public MemoryDatabase() 
  { 
     Movies = []; 
+    Actors = [];
  
     SeedMovies(); 
+    SeedActors();
  
     nextMovieId = Movies.Count; 
+    nextActorId = Actors.Count;
   } 
  
   private void SeedMovies() 
@@ -100,8 +106,30 @@ public class MemoryDatabase
     }); 
   } 
  
+  private void SeedActors() 
+  { 
+    Actors.AddRange(new Actor[] 
+    { 
+      new Actor(1, "Marlon Brando", 1924, "Legendary actor known for The Godfather."), 
+      new Actor(2, "Al Pacino", 1940, "Iconic actor in Scarface and The Godfather series."), 
+      new Actor(3, "Christian Bale", 1974, "Versatile actor in Batman trilogy."), 
+      new Actor(4, "Tim Robbins", 1958, "Actor in The Shawshank Redemption."), 
+      new Actor(5, "John Travolta", 1954, "Star of Pulp Fiction."), 
+      new Actor(6, "Liam Neeson", 1952, "Actor in Schindler's List."), 
+      new Actor(7, "Elijah Wood", 1981, "Frodo in Lord of the Rings."), 
+      new Actor(8, "Brad Pitt", 1963, "Actor in Fight Club."), 
+      new Actor(9, "Tom Hanks", 1956, "Star of Forrest Gump."), 
+      new Actor(10, "Leonardo DiCaprio", 1974, "Actor in Inception.") 
+    }); 
+  } 
+ 
   public int NextMovieId() 
   { 
     return ++nextMovieId; 
+  } 
+ 
+  public int NextActorId() 
+  { 
+    return ++nextActorId; 
   } 
 } 
