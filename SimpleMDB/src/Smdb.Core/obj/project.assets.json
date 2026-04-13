@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj",
+      "projectUniqueName": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj",
       "projectName": "Smdb.Core",
-      "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj",
+      "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj",
       "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\src\\Smdb.Core\\obj\\",
+      "outputPath": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\src\\Smdb.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -88,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

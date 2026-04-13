@@ -393,29 +393,6 @@
         "build": {
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
-        }
-      },
-      "Smdb.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Shared": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Smdb.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Smdb.Core.dll": {}
-        }
       }
     }
   },
@@ -926,23 +903,11 @@
         "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../../../SharedLibrary/src/Shared/Shared.csproj",
-      "msbuildProject": "../../../SharedLibrary/src/Shared/Shared.csproj"
-    },
-    "Smdb.Core/1.0.0": {
-      "type": "project",
-      "path": "../../src/Smdb.Core/Smdb.Core.csproj",
-      "msbuildProject": "../../src/Smdb.Core/Smdb.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.NET.Test.Sdk >= 17.14.1",
-      "Shared >= 1.0.0",
-      "Smdb.Core >= 1.0.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.4"
@@ -954,11 +919,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
+      "projectUniqueName": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
       "projectName": "Smdb.Core.Test",
-      "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
+      "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
       "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\tests\\Smdb.Core.Test\\obj\\",
+      "outputPath": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\tests\\Smdb.Core.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -972,14 +937,7 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "C:\\Users\\black\\Downloads\\Projecto\\SharedLibrary\\src\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\SharedLibrary\\src\\Shared\\Shared.csproj"
-            },
-            "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj": {
-              "projectPath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\src\\Smdb.Core\\Smdb.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7SLFqzBUQDc=",
+  "dgSpecHash": "oa3S8swGbHk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\black\\Downloads\\Projecto\\SimpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
+  "projectFilePath": "C:\\Users\\black\\Downloads\\Projecto\\simpleMDB\\tests\\Smdb.Core.Test\\Smdb.Core.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\black\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
